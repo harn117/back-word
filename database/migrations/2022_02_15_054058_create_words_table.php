@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('words', function (Blueprint $table) {
             $table->id();
             $table->string('word');
-            $table->string('word-inv');
+            $table->string('word_inv');
             $table->boolean('anagrams');
             $table->timestamps();
         });

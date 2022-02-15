@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('/user')->group(function(){
     Route::post('/login', 'App\Http\Controllers\LoginController@login');
 });
-Route::get('/login', function() { return 'Hello World';});
+Route::get('/word', 'App\Http\Controllers\WordController@getData');
+Route::post('/word', 'App\Http\Controllers\WordController@store');
 /* Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 }); */
